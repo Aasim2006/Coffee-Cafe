@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee@Cafe™ | Premium Cafe in Ambur, Tamil Nadu</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Welcome to Coffee@Cafe™ in Ambur, Tamil Nadu. Taste our famous Spanish Latte, cold coffee, and delicious food in a cozy ambience with free Wi-Fi.">
+    <meta name="keywords"
+        content="coffee cafe, coffee shop ambur, best cafe ambur, spanish latte tamil nadu, cafe near mc road, coffee shop with wifi">
+    <meta name="author" content="Coffee@Cafe™">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- FIXED GLASSMORPHIC NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo" id="nav-logo">
+            <img src="images/cafe_logo.png" alt="Coffee@Cafe logo" class="header-logo">
+            Coffee<span>@Cafe™</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+            <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+            <li><a href="#menu" class="nav-link" id="link-menu">Menu</a></li>
+            <li><a href="#gallery" class="nav-link" id="link-gallery">Gallery</a></li>
+            <li><a href="#reviews" class="nav-link" id="link-reviews">Reviews</a></li>
+            <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+        </ul>
+
+        <div class="navbar-cta">
+            <a href="#contact" class="btn btn-primary" id="nav-visit-btn">Visit Us</a>
+        </div>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-grid">
+            <div class="hero-content reveal-left active">
+                <div class="badge-wrap">
+                    <div class="badge-text">
+                        ⭐ <span class="counter" data-target="4.9" data-decimals="1">0.0</span> Rating |
+                        <span class="counter" data-target="65" data-decimals="0">0</span>+ Reviews
+                    </div>
+                </div>
+                <h1>Where Every Sip Feels Like <span>Home.</span></h1>
+                <p>Premium coffee, handcrafted beverages, delicious food, and a cozy atmosphere in the heart of Ambur,
+                    Tamil Nadu. Let coffee connect us.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary" id="hero-menu-btn">Explore Menu</a>
+                    <a href="#contact" class="btn btn-outline" id="hero-directions-btn">Get Directions</a>
+                </div>
+            </div>
+
+            <div class="hero-image-container reveal-right active">
+                <!-- Floating Double Coffee Bean Glowing Neon Sign SVG -->
+                <svg class="hero-neon-svg" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    id="hero-neon-logo">
+                    <!-- Glowing Background Ring -->
+                    <circle cx="150" cy="150" r="115" stroke="#FF5500" stroke-width="2" opacity="0.15" fill="none" />
+                    <circle cx="150" cy="150" r="110" stroke="#FF5500" stroke-width="4" opacity="0.25" fill="none" />
+                    <circle cx="150" cy="150" r="110" stroke="#FF6F00" stroke-width="1" opacity="0.8" fill="none" />
+
+                    <!-- CoC Circular Text Path -->
+                    <path id="text-path" d="M 150,150 m -92,0 a 92,92 0 1,1 184,0 a 92,92 0 1,1 -184,0" fill="none" />
+                    <text font-family="'Poppins', sans-serif" font-size="14" font-weight="700" fill="#FF8800"
+                        letter-spacing="3" opacity="0.9">
+                        <textPath href="#text-path" startOffset="50%" text-anchor="middle">
+                            • LET COFFEE CONNECT US •
+                        </textPath>
+                    </text>
+
+                    <!-- Bean Left -->
+                    <g transform="translate(100, 105) rotate(-35)">
+                        <!-- Glow filter effect using standard SVG -->
+                        <ellipse cx="35" cy="55" rx="30" ry="48" fill="#1A0D08" stroke="#FF5500" stroke-width="5"
+                            filter="drop-shadow(0 0 8px #FF4400)" />
+                        <ellipse cx="35" cy="55" rx="28" ry="46" fill="none" stroke="#FF8800" stroke-width="2" />
+                        <!-- S-curve for bean divider line -->
+                        <path d="M 35,7 C 22,25, 48,85, 35,103" stroke="#FF5500" stroke-width="4" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M 35,7 C 22,25, 48,85, 35,103" stroke="#FFAA00" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                    </g>
+
+                    <!-- Bean Right -->
+                    <g transform="translate(142, 115) rotate(20)">
+                        <ellipse cx="35" cy="55" rx="30" ry="48" fill="#1A0D08" stroke="#FF5500" stroke-width="5"
+                            filter="drop-shadow(0 0 8px #FF4400)" />
+                        <ellipse cx="35" cy="55" rx="28" ry="46" fill="none" stroke="#FF8800" stroke-width="2" />
+                        <!-- S-curve for bean divider line -->
+                        <path d="M 35,7 C 22,25, 48,85, 35,103" stroke="#FF5500" stroke-width="4" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M 35,7 C 22,25, 48,85, 35,103" stroke="#FFAA00" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                    </g>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <a href="#about" class="scroll-down" id="scroll-indicator" aria-label="Scroll to about section">
+            <span>Scroll Down</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-img-wrap reveal-left">
+                <!-- Using real landscape interior photo of Coffee@Cafe -->
+                <img src="images/cafe_interior_2.jpg" alt="Cozy seating interior of Coffee@Cafe Ambur" loading="lazy">
+            </div>
+
+            <div class="about-content reveal-right">
+                <span class="section-tag">Our Story</span>
+                <h3>A Cozy Coffee Sanctuary in Ambur</h3>
+                <p>Welcome to Coffee@Cafe™, Ambur’s premier coffee house. We are dedicated to offering an exceptional
+                    experience where every detail—from our signature coffee blends to our warm and inviting wood-trimmed
+                    architecture—is crafted to make you feel right at home.</p>
+                <p>Whether you're looking to catch up with old friends, dive into your work, or simply unwind with a
+                    premium hot beverage, our cafe provides the ideal space.</p>
+
+                <div class="about-features">
+                    <div class="about-feat-item">
+                        <div class="about-feat-icon">🌿</div>
+                        <span>Cozy Ambience</span>
+                    </div>
+                    <div class="about-feat-item">
+                        <div class="about-feat-icon">📶</div>
+                        <span>Free High-Speed Wi-Fi</span>
+                    </div>
+                    <div class="about-feat-item">
+                        <div class="about-feat-icon">👥</div>
+                        <span>Friendly Staff</span>
+                    </div>
+                    <div class="about-feat-item">
+                        <div class="about-feat-icon">💻</div>
+                        <span>Perfect for Work & Rest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR MENU SECTION -->
+    <section class="menu" id="menu">
+        <div class="section-header reveal">
+            <span class="section-tag">Artisanal Menu</span>
+            <h2>Our Popular Specials</h2>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Card 1 -->
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600"
+                        alt="Creamy Spanish Latte art" loading="lazy">
+                </div>
+                <div class="menu-header">
+                    <h3>Spanish Latte</h3>
+                    <span class="menu-price">₹180</span>
+                </div>
+                <p>Our signature bold espresso balanced with velvety steamed milk and sweet condensed milk for a rich,
+                    smooth finish.</p>
+                <div class="menu-footer">
+                    <span class="menu-badge">Best Seller</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=600"
+                        alt="Chilled cold coffee over ice" loading="lazy">
+                </div>
+                <div class="menu-header">
+                    <h3>Cold Coffee</h3>
+                    <span class="menu-price">₹160</span>
+                </div>
+                <p>Perfectly brewed chilled espresso blended with creamy milk and vanilla bean ice cream, topped with
+                    cocoa powder.</p>
+                <div class="menu-footer">
+                    <span class="menu-badge">Guest Favorite</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=600"
+                        alt="Rich hot chocolate drink" loading="lazy">
+                </div>
+                <div class="menu-header">
+                    <h3>Soul of Chocolate</h3>
+                    <span class="menu-price">₹200</span>
+                </div>
+                <p>A decadent, velvety hot chocolate crafted from imported dark cocoa beans, topped with fluffy mini
+                    marshmallows.</p>
+                <div class="menu-footer">
+                    <span class="menu-badge">Chocolate Specialty</span>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=600"
+                        alt="Toasted bread with gourmet toppings" loading="lazy">
+                </div>
+                <div class="menu-header">
+                    <h3>Signature Toast</h3>
+                    <span class="menu-price">₹150</span>
+                </div>
+                <p>Thick-sliced artisanal sourdough bread toasted crispy, served with whipped cream cheese and fresh
+                    seasonal berries.</p>
+                <div class="menu-footer">
+                    <span class="menu-badge">Freshly Baked</span>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <img src="images/cappuccino.png"
+                        alt="Classic hot cappuccino cup" loading="lazy">
+                </div>
+                <div class="menu-header">
+                    <h3>Cappuccino</h3>
+                    <span class="menu-price">₹140</span>
+                </div>
+                <p>A classic Italian favorite combining rich double espresso, warm steamed milk, and a dense layer of
+                    velvety foam.</p>
+                <div class="menu-footer">
+                    <span class="menu-badge">Classic Brew</span>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1506459225024-1428097a7e18?q=80&w=600"
+                        alt="Caffe mocha coffee drink" loading="lazy">
+                </div>
+                <div class="menu-header">
+                    <h3>Caffè Mocha</h3>
+                    <span class="menu-price">₹170</span>
+                </div>
+                <p>A double shot of espresso combined with dark Belgian chocolate syrup and steamed milk, finished with
+                    whipped cream.</p>
+                <div class="menu-footer">
+                    <span class="menu-badge">Rich & Sweet</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="why-us" id="why-us">
+        <div class="section-header reveal">
+            <span class="section-tag">Our Ethos</span>
+            <h2>Why Choose Coffee@Cafe™</h2>
+        </div>
+
+        <div class="why-grid">
+            <!-- Feature 1 -->
+            <div class="why-card reveal">
+                <div class="why-icon">☕</div>
+                <h3>Freshly Brewed</h3>
+                <p>Every beverage is individually crafted using freshly ground single-origin beans roasted to
+                    perfection.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="why-card reveal">
+                <div class="why-icon">🌿</div>
+                <h3>Cozy Ambience</h3>
+                <p>A beautiful architectural space with ambient lighting and comfortable seating designed to feel like
+                    home.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="why-card reveal">
+                <div class="why-icon">📶</div>
+                <h3>Free Wi-Fi</h3>
+                <p>Stay productive with high-speed internet connection, making us the perfect remote workstation in
+                    Ambur.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="why-card reveal">
+                <div class="why-icon">❤️</div>
+                <h3>Friendly Service</h3>
+                <p>Our dedicated team is committed to making every visit special with warm hospitality and customized
+                    orders.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery" id="gallery">
+        <div class="section-header reveal">
+            <span class="section-tag">Visual Tour</span>
+            <h2>Inside Our Sanctuary</h2>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Item 1: Storefront Photo -->
+            <div class="gallery-item reveal">
+                <img src="images/cafe_exterior.jpg" alt="Coffee@Cafe Storefront Exterior in Ambur">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Welcoming Storefront</h4>
+                        <p>Exterior View</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Main Seating Landscape -->
+            <div class="gallery-item reveal">
+                <img src="images/cafe_interior_1.jpg"
+                    alt="Main interior seating arrangement with hanging wicker lights">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Main Seating Lounge</h4>
+                        <p>Warm Lighting & Cozy Chairs</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Portrait Floor & Lamp view (perfect for masonry column height variance!) -->
+            <div class="gallery-item reveal">
+                <img src="images/cafe_interior_3.jpg" alt="Cozy wall corner seating with checkers tiled floor">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Cozy Corners</h4>
+                        <p>Quiet zones for work or rest</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Another Seating Landscape -->
+            <div class="gallery-item reveal">
+                <img src="images/cafe_interior_2.jpg" alt="Wall quotes and wooden tables at Coffee@Cafe Ambur">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>"Let Coffee Connect Us"</h4>
+                        <p>Wall Quotes & Tables</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Premium brewing close-up placeholder from Unsplash -->
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600"
+                    alt="Espresso extraction process">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Crafted with Precision</h4>
+                        <p>Artisanal Roasts</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6: Premium latte art placeholder from Unsplash -->
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=600"
+                    alt="Latte art pour close up">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Aesthetic Pours</h4>
+                        <p>Velvet Latte Art</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS SECTION -->
+    <section class="reviews" id="reviews">
+        <div class="section-header reveal">
+            <span class="section-tag">Guest Reviews</span>
+            <h2>Loved by the Community</h2>
+        </div>
+
+        <div class="reviews-container reveal">
+            <div class="reviews-wrapper">
+                <div class="reviews-track" id="reviews-track">
+                    <!-- Slide 1 -->
+                    <div class="review-card">
+                        <div class="review-box">
+                            <div class="review-stars">
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                            <p>"Best Spanish Latte in town! The condensed milk blend is incredibly smooth, and the
+                                wood-trimmed cafe interior makes it a delight to sit in."</p>
+                            <div class="review-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300"
+                                    alt="Aravind K. guest portrait" loading="lazy">
+                                <div class="author-details">
+                                    <h4>Aravind K.</h4>
+                                    <span>Ambur Resident</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="review-card">
+                        <div class="review-box">
+                            <div class="review-stars">
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                            <p>"Perfect place to relax and work. The Wi-Fi is extremely fast, and the hanging wicker
+                                lights create a beautiful, soft atmosphere that helps me focus."</p>
+                            <div class="review-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300"
+                                    alt="Priya S. guest portrait" loading="lazy">
+                                <div class="author-details">
+                                    <h4>Priya S.</h4>
+                                    <span>Freelance Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="review-card">
+                        <div class="review-box">
+                            <div class="review-stars">
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                            <p>"Amazing ambience and friendly staff. Every time I visit Ambur, this is my absolute
+                                must-visit spot. Their Soul of Chocolate is rich and heavenly."</p>
+                            <div class="review-author">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300"
+                                    alt="Naveen R. guest portrait" loading="lazy">
+                                <div class="author-details">
+                                    <h4>Naveen R.</h4>
+                                    <span>Regular Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="slider-arrow arrow-prev" id="slider-prev-btn" aria-label="Previous testimonial">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+            <button class="slider-arrow arrow-next" id="slider-next-btn" aria-label="Next testimonial">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </button>
+
+            <!-- Dots -->
+            <div class="reviews-dots" id="reviews-dots">
+                <button class="dot-btn active" data-index="0" aria-label="Slide 1"></button>
+                <button class="dot-btn" data-index="1" aria-label="Slide 2"></button>
+                <button class="dot-btn" data-index="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL OFFER SECTION -->
+    <section class="special-offer">
+        <div class="offer-banner reveal">
+            <span class="offer-tag">Weekend Treat</span>
+            <h2>Buy 2 Coffees & Get 10% Off on Selected Desserts</h2>
+            <p>Treat yourself to our premium crafted espressos or lattes and enjoy a sweet discount on any of our
+                freshly baked signature toasts or pastry items.</p>
+            <a href="#contact" class="btn btn-primary pulse-btn" id="offer-order-btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- CONTACT & LOCATION SECTION -->
+    <section class="contact" id="contact">
+        <div class="section-header reveal">
+            <span class="section-tag">Locate Us</span>
+            <h2>Find Our Sanctuary & Connect</h2>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info-panel reveal-left">
+                <!-- Location Address -->
+                <div class="contact-detail-card">
+                    <div class="contact-detail-icon">📍</div>
+                    <div class="contact-detail-text">
+                        <h4>Our Location</h4>
+                        <p>Shop No.9, Ground Floor, NEXT MOGHAL RESTAURANT, ELYASEEN COMPLEX, NH48, MC Road, Ambur,
+                            Tamil Nadu.</p>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-detail-card">
+                    <div class="contact-detail-icon">📞</div>
+                    <div class="contact-detail-text">
+                        <h4>Phone Number</h4>
+                        <p>+91 94863 56789</p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-detail-card">
+                    <div class="contact-detail-icon">📧</div>
+                    <div class="contact-detail-text">
+                        <h4>Email Address</h4>
+                        <p>hello@coffeeatcafe.com</p>
+                    </div>
+                </div>
+
+                <!-- Google Maps Iframe showing the real Coffee@Cafe location in Ambur -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3168128362635!2d78.6974127!3d12.7903823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac531061962bf1%3A0xc3b8398ff0c0a8aa!2sCoffee%40Cafe!5e0!3m2!1sen!2sin!4v1721516000000!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Coffee@Cafe Location Map in Ambur">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-panel reveal-right">
+                <h3>Send Us a Message</h3>
+                <form class="form-form" id="contact-form">
+                    <div class="form-field">
+                        <label for="contact-name">Full Name</label>
+                        <input type="text" id="contact-name" required placeholder="e.g. John Doe">
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" required placeholder="e.g. john@example.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-msg">Your Message</label>
+                        <textarea id="contact-msg" required
+                            placeholder="What would you like to ask or share with us?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="form-submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="stroke: var(--accent); fill: rgba(212, 163, 115, 0.1);">
+                        <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                        <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+                        <line x1="6" x2="6" y1="2" y2="4" />
+                        <line x1="10" x2="10" y1="2" y2="4" />
+                        <line x1="14" x2="14" y1="2" y2="4" />
+                    </svg>
+                    Coffee<span>@Cafe™</span>
+                </a>
+                <p>Creating cozy, sensory coffee connections in the heart of Ambur, Tamil Nadu. Let coffee connect us.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Sunday: 11:00 AM - 11:00 PM</p>
+                <p>Open All 7 Days of the Week</p>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    📍 MC Road, Ambur, TN
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    📞 +91 94863 56789
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    📧 hello@coffeeatcafe.com
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Coffee@Cafe™ Ambur. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="back-to-top-btn" aria-label="Scroll back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast-notification">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <div class="toast-content">
+            <h4 id="toast-title">Message Sent!</h4>
+            <p id="toast-message">Thank you for connecting with us. We'll get back to you shortly!</p>
+        </div>
+    </div>
+
+    <!-- Vanilla Javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
